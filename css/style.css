@@ -140,3 +140,21 @@ footer{
 .socialmedia img{
     height: 24px;
 }
+
+@media (max-width: 550px){
+    .content{
+      width: 400px;
+    }
+}
+
+@media (max-width: 450px){
+    .content{
+      width: 300px;
+    }
+
+    .resultado h3{
+        font-size: 16;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
