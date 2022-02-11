@@ -30,70 +30,99 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: black;
-
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
 }
 
 .content{
-    background-color: #01A85B;
     width: 500px;
-    padding: 20px;
     text-align: center;
-    border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.titulo{
+    font-size: 48px;
+}
+span{
+    display: block;
 }
 
 form{
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    display: block;
 }
 
 #valor{
     text-align: center;
     background-color: transparent;
     border: 2px solid #3E4096;
-    font-size: 16px;
+    font-size: 24px;
     padding: 10px 15px;
-    border-radius: 35px;
-    color: #3E4096;
+    border-radius: 10px;
+    color: #fff;
     letter-spacing: 1px;
+    width: 50%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #valor:focus{
         outline: none;
 }
 
+#valor::placeholder{
+    color: rgba(62, 64, 150, 0.9);
+}
+
 .btn{
-    background-color: transparent;
-    color: #3E4096;
-    border: 2px solid #3E4096;
-    border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 0 0;
+    background-color: #FFCD2A;
+    border: 0;
+    border-radius: 5px;
+    color: white;
     cursor: pointer;
+    font-size: 22px;
     font-weight: bold;
-    font-size: 18px;
-    padding: 0 18px;
-    line-height: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 250px;
+    line-height: 20px;
+    padding: 16px 20px;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
 }
 
 .btn:hover{
-    background-color: #3E4096;
-    color: white;
+    transform: scale(1.05);
 }
 
 .btn:active{
-
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
+    transform: scale(1.05) translateY(2px);
 }
 
 .resultado{
-    font-size: 32px;
+    background-color: rgba(62, 64, 150, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 24px;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultado h3{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 footer{

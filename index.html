@@ -11,20 +11,17 @@
 
     <div class="container">
         <div class="content">
-            <h1>Conversor do Real Brasileiro (BRL)</h1>
+            <h1 class="titulo"> <span>Conversor</span> Real Brasileiro</h1>
 
             <form>
-
-                <input id="valor" type="number" placeholder="BRL">
-    
+                <input id="valor" autocomplete="off" type="number" placeholder="BRL">
+                <input class="btn" type="button" value="Converter" onclick="converter()">
             </form>
-            <div>
-                <div class="resultado" id="dolar"></div>
-                <div class="resultado" id="euro"></div>
-                <div class="resultado" id="libra"></div>
+            <div class="resultado">
+                <div id="dolar"></div>
+                <div id="euro"></div>
+                <div id="libra"></div>
             </div>
-            <input class="btn" type="button" value="Converter" onclick="converter()">
-
         </div>
         <footer>
             <ul class="socialmedia">
