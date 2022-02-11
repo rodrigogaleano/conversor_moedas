@@ -1,16 +1,4 @@
-/*
-#098171
-#2D8E6C
-#61A363
-#9CB95A
-#D1CD52
-
-
-
-#01A85B
-#FFCD2A
-#3E4096
-*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 *{
     margin: 0;
@@ -18,130 +6,205 @@
 }
 
 body{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #FFCD2A;
     box-sizing: border-box;
 }
 
+/* 
+==================== CONTAINER EXTERNO 
+*/
 .container{
-    height: 100vh;
+    /* Define a viewport como width e heigh */
     width: 100vw;
+    height: 100vh; 
+
+    /* Flexbox */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    /* Background */
     background: #0f0c29;
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
 }
 
+/* 
+==================== CONTAINER DE CONTEÚDO
+*/
 .content{
+    /* Tamanho */
     width: 500px;
+
+    /* Alinhamento e espaçamento*/
     text-align: center;
+
+    /* Flexbox */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.titulo{
+/* Configurações de texto */
+.titulo{ 
     font-size: 48px;
 }
 span{
     display: block;
 }
 
+/* --- Formulário ---*/
 form{
+    /* Tamanho */
     width: 100%;
+
+    /* Alinhamento e espaçamento*/
     margin-top: 20px;
     margin-bottom: 20px;
+
+    /* Flexbox */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-input{
-    display: block;
-}
-
+/* --- Input ---*/
 #valor{
-    text-align: center;
-    background-color: transparent;
-    border: 2px solid #3E4096;
+    /* Tamanho */
+    width: 50%;
+
+    /* Texto */
     font-size: 24px;
-    padding: 10px 15px;
-    border-radius: 10px;
     color: #fff;
     letter-spacing: 1px;
-    width: 50%;
+
+    /* Alinhamento e espaçamento*/
+    text-align: center;
+    padding: 10px 15px;
     margin-top: 25px;
     margin-bottom: 25px;
+
+    /* Background */
+    background-color: transparent;
+
+    /* Borda */
+    border: 2px solid #3E4096;
+    border-radius: 10px;
 }
 
 #valor:focus{
-        outline: none;
+    outline: none;
 }
 
 #valor::placeholder{
     color: rgba(62, 64, 150, 0.9);
 }
 
+/* --- Botão ---*/
 .btn{
+    /* Background */
     background-color: #FFCD2A;
+
+    /* Borda */
     border: 0;
     border-radius: 5px;
+
+    /* Texto */
     color: white;
-    cursor: pointer;
     font-size: 22px;
     font-weight: bold;
+
+    /* Alinhamento e espaçamento*/
     line-height: 20px;
     padding: 16px 20px;
+
+    /* Transform */
     transform: translateZ(0) scale(1);
     transition: transform .2s;
+
+    /* Outros */
+    cursor: pointer;
 }
 
 .btn:hover{
-    transform: scale(1.05);
+    /* Aumenta o tamanho no hover */
+    transform: scale(1.05); 
 }
 
 .btn:active{
+    /* Aumenta o tamanho e vai levemente para baixo ao clicar */
     transform: scale(1.05) translateY(2px);
 }
 
+/* 
+==================== MENSAGEM DE ERRO
+*/
 .erro{
+    /* Background */
     background-color: rgba(62, 64, 150, 0.1);
+
+    /* Alinhamento e espaçamento */
     padding: 20px;
-    border-radius: 15px;
-    font-size: 24px;
-    display: none;
     text-align: center;
+
+    /* Borda */
+    border-radius: 15px;
+
+    /* Texto */
+    font-size: 24px;
+
+    /* Flexbox */
+    display: none;
     justify-content: center;
     align-items: center;
 }
 
+/* 
+==================== RESULTADO
+*/
 .resultado{
+    /* Background */
     background-color: rgba(62, 64, 150, 0.1);
+
+    /* Alinhamento e espaçamento */
     padding: 20px;
-    border-radius: 15px;
-    font-size: 24px;
-    display: none;
+
     text-align: center;
+
+    /* Borda */
+    border-radius: 15px;
+
+    /* Texto */
+    font-size: 24px;
+
+    /* Flexbox */
+    display: none;
     justify-content: center;
     align-items: center;
 }
 
 .resultado h3{
+    /* Espaçamento */
     padding-left: 15px;
     padding-right: 15px;
 }
 
+/* 
+==================== RODAPÉ
+*/
+
 footer{
+    /* Alinhamento */
     position: fixed;
     bottom: 0;
 }
 
 .socialmedia li{
+    /* Alinhamento e Espaçamento */
     display: inline-block;
     padding: 5px;
     margin-top: 10px;
@@ -149,15 +212,22 @@ footer{
 }
 
 .socialmedia img{
+    /* Tamanho */
     height: 24px;
 }
 
+/* 
+============================================================ MEDIQUERY
+*/
+
+/* ==================== ATÉ 550PX */
 @media (max-width: 550px){
     .content{
       width: 400px;
     }
 }
 
+/* ==================== ATÉ 450PX */
 @media (max-width: 450px){
     .content{
       width: 300px;
