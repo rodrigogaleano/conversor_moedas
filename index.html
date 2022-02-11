@@ -15,9 +15,12 @@
             <h1 class="titulo"> <span>Conversor</span> Real Brasileiro</h1>
 
             <form>
-                <input id="valor" autocomplete="off" type="number" placeholder="BRL">
+                <input id="valor" autocomplete="off" type="number" placeholder="BRL" required>
                 <input class="btn" type="button" value="Converter" onclick="converter()">
             </form>
+            <div class="erro">
+                
+            </div>
             <div class="resultado">
                 <div id="dolar"></div>
                 <div id="euro"></div>
