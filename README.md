@@ -1,6 +1,20 @@
 <h1 align="center">Conversos de moedas</h1>
 
-🚧 EM DESENVOLVIMENTO 🚧
+Você pode acessar o projeto através deste <a href="https://rodrigogaleano.github.io/conversor_moedas/" target="_blank">link</a>.
+
+<p align="center">
+ <a href="#tecnologias">Tecnologias</a> •
+ <a href="#autor">Autor</a>
+</p>
+
+### Tecnologias
+
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+
 
 ### Autor
 
