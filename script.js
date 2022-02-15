@@ -32,8 +32,12 @@ function converter() {
     //Valida a resposta
     if (valor == '' || valor <= 0) {
         //Caso não haja resposta, oculta o resultado e exibe uma mensagem de erro
-        erro.style.display = 'flex';
         container.style.display = 'none';
+        erro.style.display = 'flex';
+
+        erro.style.animation = '';
+        setTimeout(() => erro.style.animation = 'shake .8s ease-in', 5);
+
         erro.innerHTML = 'Informe um valor válido para conversão!'
     } else {
         //Caso haja resposta, oculta a mensagem de erro e exibe a conversão

@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+@keyframes shake{
+    0% {transform: translate(0);}
+    20%, 40%, 60%, 80%{
+        transform: translate(12px);
+    }
+    10%, 30%, 50%{
+        transform: translate(-2px);
+    }
+    70%, 100%{
+        transform: translate(0);
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -161,6 +174,11 @@ form{
     display: none;
     justify-content: center;
     align-items: center;
+
+    /* Animação */
+    /* animation-name: shake;
+    animation-duration: .8s;
+    animation-timing-function: ease-in; */
 }
 
 /* 
