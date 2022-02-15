@@ -30,7 +30,7 @@ function converter() {
     let valor = input.value; //Armazena o valor do input
 
     //Valida a resposta
-    if (valor == '') {
+    if (valor == '' || valor <= 0) {
         //Caso não haja resposta, oculta o resultado e exibe uma mensagem de erro
         erro.style.display = 'flex';
         container.style.display = 'none';
